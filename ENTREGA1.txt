@@ -1,0 +1,60 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage[spanish]{babel}
+\usepackage[left=2cm,right=2cm]{geometry}
+\renewcommand*{\familydefault}{\sfdefault}%cambio de letra
+
+\title{\textbf{Módulo 1-Producción de Textos e Hipertextos}}
+\author{Lucas Guinea-Debora Martin-Guada Nanclares-Leandro Becerra\\Lucia Gallart-Daniela Mercado\\\\luacsguinearitta@gmail.com\\debymartin7.2.01@gmail.com\\leandroabecerra@hotmail.com\\guadananclares@gmail.com\\luciagallart@gmail.com\\0danimer@gmail.com\\\\{\textbf{con {\LaTeX}}}}
+\date{\today}
+\begin{document}
+\maketitle
+\begin{abstract}
+    En este documento analizamos lo que hemos visto en clase de Técnicas y Herramientas Modernas de la facultad de Ingeniería de la Universidad Nacional de Cuyo, sobre diferentes herramientas como: el uso de html, crear un perfil en GitHub, y demas herramientas.
+\end{abstract}
+\begin{quote}
+    Keywords:Tecnologías emergentes, hipertexto, html, GitHub
+\end{quote}
+\vspace{3cm}
+
+
+\section{Introduction}
+En la primer clase  junto con los profesores de la cátedra nos informamos en los temas relacionados al módulo 1 de la materia,Producción de Textos e Hipertextos, en el cual aprendimos una serie de herramientas de las cuales a hablaremos a continuación.
+\section{El lenguaje HTML}
+\subsection{Creación de Texto html con estandrard (tags) versión 3  aka w3schools.}
+En esta pagina https://www.w3.org/TR/html4/index/elements.html aprendimos distintos tags para utilizar en la creación de la página y su descripción.
+\subsection{Ejemplo}
+Para empezar a aprender a programar en html , buscamos crear un archivo con los integrantes del grupo.\\
+Aprendimos los comandos <head>, <body>, y sus respectivos cierres (</head>, </body>), y posteriormente aprendimos h1, h2, h3,hr.
+Este es nuestro primer documento html:\\
+<html>\\
+<head>\\
+<h1>\\
+Integrantes:\\
+</h1>\\
+<hr> \\                            
+</head>\\
+<body>\\
+<h1>\\
+Nombre del primer integrante\\
+</h1>\\
+<h2>\\
+Nombre del segundo integrante\\
+</h2>\\
+<h3>\\
+Nombre del tercer integrante\\
+</h3>\\
+</body>\\
+</html>\\
+\section{Forma segura de navegar}
+Vimos  una forma segura de navegar por nuestros archivos a través del comando llamado file:///c:/ en navegadores como: Google Chrome, Firefox y Microsoft Edge. Esta dirección URL cuenta con la capacidad de que al escribirla en la barra de busqueda nos proporcionará el listado de carpetas y archivos de la unidad de memoria a la cual hace referencia (Mire Fig.'~\ref{fig:enter-label}). Navegar de esta manera tiene la ventaja de no propagar malware en caso de haber un archivo infectado.
+\begin{figure}[h]%se usar para mostrar la imgen donde la colocamos h=here
+    \centering
+    \includegraphics[width=9.4cm]{image.png}
+    \caption{Captura de Pantalla de file:///c:/}
+    \label{fig:enter-label}
+\end{figure}
+\section{GitHub}
+Sitio que utilizaremos para cargar todos nuestros trabajos. GitHub es un servicio basado en la nube que aloja un sistema de control de versiones  ( sistema que registra los cambios realizados en un archivo o conjunto de archivos a lo largo del tiempo) llamado Git. Esto permite que cada integrante del grupo  colaboren y realicen cambios en proyectos compartidos, mientras hacen un seguimiento de su progreso.
+
+\end{document}
