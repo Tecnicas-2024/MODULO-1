@@ -1,0 +1,148 @@
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+\usepackage{paracol}
+
+\ifxetexorluatex
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{450808}
+\definecolor{PastelRed}{HTML}{8F0D0D}
+\definecolor{GoldenEarth}{HTML}{E7D192}
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+
+\input{pubs-num.tex}
+
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Leandro Agustin Becerra}
+\tagline{Estudiante de Ingenieria Industrial}
+\photoR{4cm}{Foto CV}
+
+\personalinfo{%
+  % Not all of these are required!
+  \email{leanbecerrand@gmail.com}
+  \phone{261 662 1565}
+  \location{Mendoza, Argentina}
+  \twitter{@leanbecerra}
+  \linkedin{leanbecerra00}
+}
+
+\makecvheader
+
+\columnratio{0.6}
+
+\begin{paracol}{2}
+\cvsection{Experience}
+
+\cvevent{Consultor}{Holos Consulting}{Enero 2022 -- Septiembre 2022}{Chile}
+\begin{itemize}
+\item Encargado de envio y recepcion de permisos digitales para el desplazamiento de empleados pertenecientes a mineras.
+\item Encargado de revision y carga de data de los empleados.
+\end{itemize}
+
+\divider
+
+\cvevent{Cajero}{SeaWorld}{Diciembre 2023 -- Marzo 2024}{Orlando, Florida, USA}
+\begin{itemize}
+\item Encargado de la caja, cierre del comercio, entrega de cupones.
+\item Asistente de supervisor
+\end{itemize}
+
+\medskip
+
+\cvsection{Un dia en mi vida}
+
+\wheelchart{1.5cm}{0.5cm}{%
+  6/8em/accent!30/{Dormir},
+  3/8em/accent!40/Tiempo libre con amigos,
+  8/8em/accent!60/Estudio y cursado,
+  2/10em/accent/Deporte,
+  5/6em/accent!20/Familia
+}
+\cvsection{Educacion}
+
+\cvevent{Ingenieria Industrial}{Universidad Nacional de Cuyo}{Marzo 2018 -- hoy}{}
+
+\divider
+
+\cvevent{Bachiller en Economia y Administracion de Empresas}{Colegio Don Bosco}{Marzo 2013 -- Diciembre 2017}{}
+
+\switchcolumn
+
+\cvsection{Mi filosofia}
+
+\begin{quote}
+``No dejes para mañana lo que puedes hacer hoy.''
+\end{quote}
+
+\cvsection{Estoy orgulloso de}
+
+\cvachievement{\faTrophy}{Representante Sudamericano de Esgrima}{Entre los mejores 5 de Sudamerica}
+
+\divider
+
+\cvachievement{\faHeartbeat}{Trabajar en empresas internacionales}{Durante la pandemia, se abrieron las puertas para trabajar virtual para Chile}
+
+\divider
+
+\cvsection{Fortalezas}
+
+\cvtag{Trabajador duro y eficiente}
+\cvtag{Cuidadoso}\\
+\cvtag{Lider}
+
+\divider\smallskip
+
+\cvtag{Paquete de Microsoft Office}
+\cvtag{Python}\\
+\cvtag{Analisis Estadistico}
+
+\cvsection{Idiomas}
+
+\cvskill{Ingles}{4.5}
+\divider
+
+\cvskill{Spanish}{5}
+\divider
+
+\cvskill{Portugues}{3} 
+
+\medskip
+
+\divider
+
+\cvsection{Referencias}
+
+\cvref{Rebecca Grossman}{SeaWorld}{seaworldinternational@seaworld.com}
+
+\end{paracol}
+
+
+\end{document}

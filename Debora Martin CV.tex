@@ -1,0 +1,144 @@
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+\usepackage{paracol}
+
+\ifxetexorluatex
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{450808}
+\definecolor{PastelRed}{HTML}{8F0D0D}
+\definecolor{GoldenEarth}{HTML}{E7D192}
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+
+\input{pubs-num.tex}
+
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Debora Cecilia Martin}
+\tagline{Estudiante de Ingenieria Industrial}
+\photoR{4cm}{Foto CV}
+
+\personalinfo{%
+  % Not all of these are required!
+  \email{deboramartin7201@gmail.com}
+  \phone{2612579907 }
+  \location{Mendoza, Argentina}
+}
+
+\makecvheader
+
+\columnratio{0.6}
+
+\begin{paracol}{2}
+\cvsection{Experiencia}
+
+\cvevent{Ayudante Administrativa}{Empresa de transporte familiar}{2019 -- Actualidad}{Mendoza, Argentina}
+\begin{itemize}
+\item Planificación logistica. 
+\item Armado de presupuestos.
+\item Conocimientos en licitaciones públicas.
+\end{itemize}
+
+\divider
+
+\cvevent{Conductora}{Ministerio de Salud, Desarrollo Social y Deportes}{2022 --  Actualidad}{Mendoza, Argentina}
+\begin{itemize}
+\item Chofer de automóviles y camionetas. 
+\item Trato con personal del gobierno de Mendoza.
+\end{itemize}
+
+\medskip
+
+\cvsection{Un dia en mi vida}
+
+\wheelchart{1.5cm}{0.5cm}{%
+  6/8em/accent!30/{Dormir},
+  3/8em/accent!40/Recreación,
+  8/8em/accent!60/Estudio y cursado,
+  2/10em/accent/Deporte,
+  5/6em/accent!20/Familia
+}
+\cvsection{Educacion}
+
+\cvevent{Ingenieria Industrial}{Universidad Nacional de Cuyo}{2019 -- actualidad}{}
+
+\divider
+
+\cvevent{Bachiller en Ciencia Naturales}{Departamento de Aplicación Docente}{2014 -- 2018}{}
+
+\switchcolumn
+
+\cvsection{Mi filosofia}
+
+\begin{quote}
+``El esfuezo de hoy es la recompensa del mañana''
+\end{quote}
+
+\cvsection{Estoy orgulloso de}
+
+\cvachievement{\faTrophy}{Organizar un Congreso Nacional}{Formar parte de la organización del XX CAEII (Congreso Argentino de Estudiantes de Ingeniería Industrial) }
+
+\divider
+
+\cvachievement{\faHeartbeat}{Trabajar en el negocio familiar}{Colaborar con mis familiares cercanos en un esfuerzo conjunto}
+
+\divider
+
+\cvsection{Fortalezas}
+
+\cvtag{Toma decisiones}\\
+\cvtag{Responsabilidad y resolución de problemas}\\
+\cvtag{Organización y liderazgo}
+
+\divider\smallskip
+
+\cvtag{Paquete de Microsoft Office}
+\cvtag{Power BI}\\
+\cvtag{Analisis de Datos}
+
+\cvsection{Idiomas}
+
+\cvskill{Ingles}{3.5}
+\divider
+
+\cvskill{Frances}{1.5}
+
+\medskip
+
+\divider
+
+\cvsection{Referencias}
+
+\cvref{Norma Cristina Re}{martinje1@hotmail.com}{2615252108}
+
+\end{paracol}
+
+
+\end{document}
