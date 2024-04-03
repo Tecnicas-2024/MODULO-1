@@ -1,0 +1,168 @@
+
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+%% AltaCV uses the fontawesome5 and packages.
+%% See http://texdoc.net/pkg/fontawesome5 for full list of symbols.
+
+% Change the page layout if you need to
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+% The paracol package lets you typeset columns of text in parallel
+\usepackage{paracol}
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+% WHEN COMPILING WITH XELATEX PLEASE USE
+% xelatex -shell-escape -output-driver="xdvipdfmx -z 0" sample.tex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  % If using pdflatex:
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  % \usepackage{sourcesanspro}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+% Change the colours if you want to
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{450808}
+\definecolor{PastelRed}{HTML}{8F0D0D}
+\definecolor{GoldenEarth}{HTML}{E7D192}
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change some fonts, if necessary
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+% ...and the markers for the date/location for \cvevent
+% \renewcommand{\cvDateMarker}{\faCalendar*[regular]}
+% \renewcommand{\cvLocationMarker}{\faMapMarker*}
+
+
+% If your CV/résumé is in a language other than English,
+% then you probably want to change these so that when you
+% copy-paste from the PDF or run pdftotext, the location
+% and date marker icons for \cvevent will paste as correct
+% translations. For example Spanish:
+% \renewcommand{\locationname}{Ubicación}
+% \renewcommand{\datename}{Fecha}
+
+
+%% Use (and optionally edit if necessary) this .tex if you
+%% want to use an author-year reference style like APA(6)
+%% for your publication list
+% \input{pubs-authoryear.tex}
+
+%% Use (and optionally edit if necessary) this .tex if you
+%% want an originally numerical reference style like IEEE
+%% for your publication list
+\input{pubs-num.tex}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Lucia Gallart}
+\tagline{Estudiante}
+
+
+
+\personalinfo{
+  \email{luciagallart@gmail.com}
+  \phone{2615414285}
+  \mailaddress{Medrano 3074}
+  \location{Mendoza, Argentina}
+  \linkedin{/luciagallart}
+
+}
+
+\makecvheader
+
+\columnratio{0.6}
+
+\begin{paracol}{2}
+\medskip
+\cvsection{Experiencia}
+
+\cvevent{Coordinadora del departamento de innnovación y desarrollo empresarial}{INCA empresa Jr}{2020 -- 2022}
+
+
+\divider
+
+\cvevent{Organizadora de eventos para estudiantes de ingeniería industrial a nivel nacional.}{AAREII}{2019--2021}
+
+
+\medskip
+
+\cvsection{Educación}
+
+\cvevent{Ingeniería Industrial}{Universidad Nacional de Cuyo}
+
+\divider
+
+\cvevent{Colegio Las Candelas }{Bachiller con orientacion economia y administracion de empresas.}
+
+\divider
+\medskip
+\cvsection{Un dia de mi vida}
+
+\wheelchart{1.5cm}{0.5cm}{%
+  6/8em/accent!30/{Dormir\\},
+  3/8em/accent!40/Leer,
+  8/8em/accent!60/Estudiar,
+  2/10em/accent/Deportes,
+  5/6em/accent!20/Familia
+}
+
+\switchcolumn
+
+\cvsection{IDIOMAS}
+
+\cvskill{Inglés}{5}
+\divider
+
+\cvskill{Español}{5}
+\divider
+
+\cvskill{Italiano}{3} 
+
+\divider\smallskip
+
+\cvsection{FORTALEZAS}
+
+\cvtag{Trabajo en equipo}
+\cvtag{Detallista}\\
+\cvtag{Creativa}
+\cvtag{Comunicativa}
+
+\divider\smallskip
+
+\cvtag{C++}
+\cvtag{Excel}\\
+\cvtag{Ms Project}
+\cvtag{Java}
+\cvtag{Power Bi}
+
+
+\end{paracol}
+
+
+\end{document}
