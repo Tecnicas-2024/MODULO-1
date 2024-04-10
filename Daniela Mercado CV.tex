@@ -1,0 +1,85 @@
+\input{setup/preamble.tex}
+\input{setup/macros.tex}
+
+\begin{document}
+    %%% Sections %%%
+    \vspace*{-1em}
+    \tcbset{colframe=white,colback=white,arc=0mm, height=0.75\textheight}
+    \begin{tcolorbox}
+        %\vspace*{-0.5em}      
+         \adjustbox{valign=t}{\begin{minipage}{0.3\textwidth} % Side Panel 
+            \begin{tcolorbox}[height=0.95\textheight, grow to left by=0.6cm, colback=backdrop,colframe=backdrop,arc=0mm]
+                %\begin{minipage}{\textwidth} % Picture Area
+                \includegraphics[width=\textwidth]{CV.jpeg} % Picture 
+                \vspace{1em}
+
+                Contacto
+                \vspace{1em}
+                
+                \email{0danimer@gmail.com} 
+                \vspace{1em}
+
+                \phone{2613415888} %\par 
+                \vspace{1em}
+                %\vspace{0.7em}
+                
+                \address{Luján de Cuyo, Mendoza} \par \vspace{1em}
+                
+                
+                \github{https://github.com/Daniela-Mercado}{Daniela-Mercado} \par \vspace{1em}
+
+                \vspace{1.5em}
+                \parbox{0.35\linewidth}{Español Inglés}
+                \parbox{0.55\linewidth}{Nativo 
+                
+                B2}
+            
+            \end{tcolorbox}
+        \end{minipage}}
+               %%% TItle %%%
+        %\tcbset{colframe=title,colback=title,arc=0mm}
+        \adjustbox{valign=t}{\begin{minipage}{0.67\textwidth} % Main Panel (e.g. Education, Work Experience)
+            \begin{tcolorbox}[grow to right by=0.75cm,height=0.08\textheight, colframe=title,colback=title,arc=0mm]
+                \name{Daniela Mercado}{\textit{Estudiante}} % Name and Profession % Name and Profession
+                %\vspace{0.5em}
+            \end{tcolorbox}
+        %\end{minipage}
+        %\begin{minipage}[b]{0.68\textwidth} % Main Panel (e.g. Education, Work Experience)
+            \begin{tcolorbox}[grow to right by=0.8cm,height=0.79\textheight,colframe=white,colback=white]
+                % Profile Section
+                %%\section*{Profile}             
+                \section*{Experiencia laboral}
+                    \work{Tutora}{Jun 2023 - Presente}{Chegg}{ 
+                    \begin{itemize}
+                        \item Resolver problemas de matemática, física e ingeniería
+                        \item Elaborar el paso a paso de acuerdo a los lineamientos establecidos de la página
+                    \end{itemize} }
+                    \work{Teleoperadora}{Jun 2022 - Dic 2022}{Movistar}{ 
+                    \begin{itemize}
+                        \item Ofrecía portabilidad numérica y fribra óptica
+                        \item Cargaba las ventas en el sistema
+                        \item Realizaba el seguimiento post-venta
+                    \end{itemize} }
+                    \work{Profesora particular}{Mar 2018 - Jun 2020}{Presencial y virtual}{ 
+                    \begin{itemize}
+                        \item Nivel secundario e ingreso universitario de matemática, física y química
+                    \end{itemize}
+                    }
+                \section*{Educacion}
+                    \education{Ingeniería industrial}{Cursando actualmente}{Universidad Nacional de Cuyo}{} \vspace{2.5em}
+                    \education{Bachiller en Economía y Administración}{Egreso 2017}{Escuela de Comercio Martín Zapata}{} \vspace{0.5em}
+                
+                   
+                % Courses
+                \section*{Aptitudes}
+                {\begin{itemize}
+                \item Paquete Office
+                \item Trabajo en equipo
+                \item Responsable
+                \item Comunicativa
+                \end{itemize}}
+            \end{tcolorbox}
+        \end{minipage} 
+        }
+    \end{tcolorbox}
+\end{document}
